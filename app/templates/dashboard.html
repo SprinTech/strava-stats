@@ -3,6 +3,13 @@
 {% block title %}Accueil{% endblock %}
 
 {% block content %}
-<h1>Connexion à l'application Strava</h1>
-<a href="{{ url_for('auth.login') }}">Se connecter</a>
+<div class="container">
+    <div class="row align-items-center text-center" style="min-height: 100vh">
+        <div class="col-md-12">
+            <h1 class="mb-5">Veuillez vous authentifier</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Logo_Strava.png" class="mb-5" style="width:30%; height:30%"><br />
+            <a class="btn btn-light btn-lg" role="button" href="{{ url_for('auth.login') }}">Se connecter</a>
+        </div>
+    </div>
+</div>
 {% endblock %}
